@@ -227,3 +227,15 @@
     background-image: url("../img/cono.png");
     background-repeat: no-repeat;
 }
+
+/* button fb*/
+.fb_iframe_widget{
+    position: absolute !important;
+    top: 350px !important;
+    left: 700px !important;
+   
+}
+.fb_iframe_widget iframe{
+    width: 70px !important;
+    height: 20px !important;
+}

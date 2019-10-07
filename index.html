@@ -8,6 +8,23 @@
     <title>Tobino Challenge</title>
     <link rel="stylesheet" type="text/css" href="css/fonts/stylesheet.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- You can use Open Graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="https://tobinocha.github.io/tobinochallenge/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Tobino Challenge" />
+    <meta property="og:description"   content="" />
+    <meta property="og:image"         content="https://github.com/tobinocha/tobinochallenge/blob/master/img/cono2.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149506714-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    gtag('config', 'UA-149506714-1');
+    </script>
 </head>
 
 <body>
@@ -37,6 +54,11 @@
         </div>
         <div class="person hide"></div>
     </div>
+    <!-- Your share button code -->
+    <div class="fb-share-button " 
+    data-href="https://tobinocha.github.io/tobinochallenge/" 
+    data-layout="button_count">
+    </div>
     <audio id="audio" loop controls style="display: none">
         <source src="audio/gaming.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
@@ -46,6 +68,15 @@
     <script type="application/javascript" src="js/main.js"></script>
     <script type="application/javascript" src="js/hand.js"></script>
     <script type="application/javascript" src="js/escudo.js"></script>
+     <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 </body>
 
 </html>
