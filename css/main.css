@@ -1,0 +1,229 @@
+.fondo {
+    position: relative;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    background-image: url(../img/FONDO.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.person {
+    position: absolute;
+    width: 75px;
+    height: 180px;
+    background-image: url(../img/TUBINOGIF2.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 20px;
+}
+
+.disolver {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/disolver.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 32%;
+    top: 34%;
+    -webkit-animation-name: zoom;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    /* Safari 4.0 - 8.0 */
+    animation-name: zoom;
+    animation-duration: 1s;
+    /* Safari prior 6.1 */
+}
+
+@-webkit-keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.6);
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    100% {
+        transform: scale(1.6);
+    }
+}
+.shieldwin{
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    left: 30px;
+    top: 60px;
+    font-size: 0;
+}
+.shieldwin div {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/escudo3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.shieldwin_cont {
+    background-image: url("../img/escudo2.png") !important;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.message {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    top: 18%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -300px;
+    background-image: url(../img/CONITOCHALLENGE.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.buttons {
+    position: absolute;
+    width: 130px;
+    height: 70px;
+    top: 2%;
+    right: 2%;
+    background-image: url(../img/flechas.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.return {
+    background-image: url(../img/return.png);
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 2%;
+    right: 2%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.action {
+    background-image: url(../img/clictostart.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 37px;
+    width: 200px;
+    left: 46%;
+    margin-left: -60px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.action:hover {
+    opacity: 0.8;
+}
+
+.disolver {
+    display: none;
+}
+
+.shield {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    left: 30px;
+    top: 60px;
+    font-size: 0;
+    /* background-image: url(../img/shield.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 35px;
+    width: 130px;  */
+}
+
+.shield-float {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/escudo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 80px;
+}
+
+.score {
+    position: absolute;
+    line-height: 30px;
+    right: 30px;
+    top: 20px;
+    /* background-image: url(../img/level-1.png); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 35px;
+    width: 130px;
+}
+
+.life {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    right: 30px;
+    top: 60px;
+    font-size: 0;
+}
+
+.life div {
+    display: inline-block;
+    width: 37px;
+    height: 50px;
+    background-image: url("../img/cono2.png");
+    background-size: contain;
+}
+
+.life_down {
+    background-image: url("../img/cono3.png") !important;
+}
+
+.hand {
+    position: absolute;
+    width: 72px;
+    height: 140px;
+    background-size: 100% 100%;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-image: url("../img/hand_c.png");
+    background-repeat: no-repeat;
+}
+
+.con {
+    position: absolute;
+    width: 72px;
+    height: 100px;
+    top: 81px;
+    z-index: 10;
+    /*left: 3px;*/
+    background-size: contain;
+    background-image: url("../img/cono.png");
+    background-repeat: no-repeat;
+}
