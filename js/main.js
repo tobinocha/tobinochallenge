@@ -10,7 +10,7 @@ $(".shield-float").css("left", getRamdom());
 
 function getRamdom() {
     var minNumber = 0;
-    var maxNumber = 950;
+    var maxNumber = 800;
     var randomnumber = Math.floor(Math.random() * (maxNumber - minNumber + 1) + minNumber);
     return randomnumber;
 }
@@ -26,7 +26,7 @@ function velocidad() {
 
     var personPos = person.position().left;
     var posFinal = 0;
-    var maximo = 1000;
+    var maximo = 900;
     var personaw = 70;
     var velnormal = 3;
     var aleatorio = Math.round(Math.random() * 8);
@@ -195,7 +195,7 @@ $(window).keydown(function(e) {
             // var ruta = bgImage.substring(indeximg, bgImage.length - 2);
             // $(".person").css("background-image", `url("${ruta}")`);
 
-            $(".con").animate({ "left": perIn, "top": 520 }, function() {
+            $(".con").animate({ "left": perIn, "top": 420 }, function() {
                 $(".con").fadeOut(function() {
                     // $(".person").css("background-image", 'url("../img/tubino_4.png")');
                     $(".person").css("transform", "rotateY(0deg)");
@@ -223,7 +223,7 @@ $(window).keydown(function(e) {
 
             });
         } else {
-            $(".con").animate({ "top": 690 }, function() {
+            $(".con").animate({ "top": 520 }, function() {
                 $(".con").fadeOut(function() {
                     $(".con").css({ "top": conpostopac, "left": conposlefac });
                     con.css("background-image", 'url("img/cono.png")');
