@@ -60,7 +60,7 @@ function velocidad() {
             active = false;
             window.clearInterval(speed);
             speed = "";
-            audio.setAttribute("src", "audio/conitowin.mp4");
+            audio.setAttribute("src", "audio/conitowin.mp3");
 
             audio.play();
             $(".disolver ").css("background-image", 'url("img/TOBINOWINS.png")');
@@ -106,7 +106,7 @@ function velocidad() {
 
 $(document).ready(function() {
 
-    $(".return , .fb-share-button").css("display", "none");
+    $(".return, .fb-share-button").css("display", "none");
     // speed = setInterval(velocidad, 6);
     // $( ".hide" ).on( "", function(e) {
     //     console.log("holi");
@@ -211,7 +211,7 @@ $(window).keydown(function(e) {
 
                     active = false;
                     speed = "";
-                    audio.setAttribute("src", "audio/DISOLVER.mp4");
+                    audio.setAttribute("src", "audio/disolver.mp3");
                     audio.play();
                     $(".disolver").css("display", "block");
                     $(".return, .fb-share-button").css("display", "block");
@@ -230,7 +230,7 @@ $(window).keydown(function(e) {
                     vidas = vidas + 1;
                     if (vidas >= 3) {
                         active = false;
-                        audio.setAttribute("src", "audio/conitowin.mp4");
+                        audio.setAttribute("src", "audio/conitowin.mp3");
                         audio.play();
                         $(".disolver ").css("background-image", 'url("img/TOBINOWINS.png")');
                         $(".disolver ").css("display", "block");
