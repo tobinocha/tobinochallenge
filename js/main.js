@@ -68,7 +68,7 @@ function velocidad() {
             $(".loser").each(function() {
                 $(this).hide();
             });
-            $(".return , .fb-share-button").css("display", "block");
+            $(".return , .fb-share-button, .btn-twitter").css("display", "block");
             $(".con ").css("display", "none");
 
             $(".person").css("background-image", 'url("img/tubinofeliz.gif")');
@@ -106,7 +106,7 @@ function velocidad() {
 
 $(document).ready(function() {
 
-    $(".return, .fb-share-button").css("display", "none");
+    $(".return, .fb-share-button, .btn-twitter").css("display", "none");
     // speed = setInterval(velocidad, 6);
     // $( ".hide" ).on( "", function(e) {
     //     console.log("holi");
@@ -214,7 +214,7 @@ $(window).keydown(function(e) {
                     audio.setAttribute("src", "audio/disolver.mp3");
                     audio.play();
                     $(".disolver").css("display", "block");
-                    $(".return, .fb-share-button").css("display", "block");
+                    $(".return, .fb-share-button, .btn-twitter").css("display", "block");
                     $(".loser").each(function() {
                         $(this).hide();
                     });
@@ -237,7 +237,8 @@ $(window).keydown(function(e) {
                         $(".loser").each(function() {
                             $(this).hide();
                         });
-                        $(".return , .fb-share-button").css("display", "block");
+                        $(".return , .fb-share-button, .btn-twitter").css("display", "block");
+                        
                         $(".con ").css("display", "none");
 
                         $(".person").css("background-image", 'url("img/tubinofeliz.gif")');
