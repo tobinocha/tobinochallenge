@@ -68,7 +68,9 @@ function velocidad() {
             $(".loser").each(function() {
                 $(this).hide();
             });
-            $(".return , .fb-share-button, .btn-twitter").css("display", "block");
+            $(".return , .fb-share-button, .btn-wsp").css("display", "block");
+            $(".btn-wsp").css("display", "flex");
+            $(".btn-twitter").append(" <a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class = 'twitter-share-button' data-url = 'https://tobinocha.github.io/tobinochallenge/' data-show-count='false'> Tweet </a><script async src = 'https://platform.twitter.com/widgets.js' charset = 'utf-8'></script>");
             $(".con ").css("display", "none");
 
             $(".person").css("background-image", 'url("img/tubinofeliz.gif")');
@@ -106,7 +108,7 @@ function velocidad() {
 
 $(document).ready(function() {
 
-    $(".return, .fb-share-button, .btn-twitter").css("display", "none");
+    $(".return, .fb-share-button, .btn-wsp").css("display", "none");
     // speed = setInterval(velocidad, 6);
     // $( ".hide" ).on( "", function(e) {
     //     console.log("holi");
@@ -166,6 +168,7 @@ function newv(v, a, b) {
 }
 
 $(window).keydown(function(e) {
+
     d[e.which] = true;
 
     if (e.which == 40 && active) {
@@ -214,7 +217,9 @@ $(window).keydown(function(e) {
                     audio.setAttribute("src", "audio/disolver.mp3");
                     audio.play();
                     $(".disolver").css("display", "block");
-                    $(".return, .fb-share-button, .btn-twitter").css("display", "block");
+                    $(".return, .fb-share-button, .btn-wsp").css("display", "block");
+                    $(".btn-wsp").css("display", "flex");
+                    $(".btn-twitter").append(" <a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class = 'twitter-share-button' data-url = 'https://tobinocha.github.io/tobinochallenge/' data-show-count='false'> Tweet </a><script async src = 'https://platform.twitter.com/widgets.js' charset = 'utf-8'></script>");
                     $(".loser").each(function() {
                         $(this).hide();
                     });
@@ -237,7 +242,9 @@ $(window).keydown(function(e) {
                         $(".loser").each(function() {
                             $(this).hide();
                         });
-                        $(".return , .fb-share-button, .btn-twitter").css("display", "block");
+                        $(".return , .fb-share-button, .btn-wsp").css("display", "block");
+                        $(".btn-wsp").css("display", "flex");
+                        $(".btn-twitter").append(" <a href = 'https://twitter.com/share?ref_src=twsrc%5Etfw' class = 'twitter-share-button' data-url = 'https://tobinocha.github.io/tobinochallenge/' data-show-count='false'> Tweet </a><script async src = 'https://platform.twitter.com/widgets.js' charset = 'utf-8'></script>");
                         
                         $(".con ").css("display", "none");
 

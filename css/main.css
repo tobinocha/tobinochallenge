@@ -240,15 +240,28 @@
     height: 20px !important;
 }
 /* button twitter*/
-/* .btn-twitter{
+.btn-twitter{
     position: absolute !important;
     top: 400px !important;
-    left: 47% !important;
+    left: 47.4% !important;
     width: 70px !important;
     height: 20px !important;
    
 }
-#widget .btn-o{
-    width: 70px !important;
-    height: 20px !important;
-} */
+
+.btn-wsp{
+    position: absolute !important;
+    top: 430px !important;
+    left: 46.5% !important;
+    background-color: #40c351;
+    color: white;
+    display: flex;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 83px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+  
+}
