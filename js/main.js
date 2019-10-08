@@ -6,6 +6,19 @@ var audio = document.getElementById("audio");
 var disolver = document.getElementsByClassName("disolver")[0];
 var speed = "";
 
+$.fn.center = function () {
+    this.css("position","absolute");
+    // this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+    //                                             $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, ((830 - $(this).outerWidth()) / 2)) + "px");
+    return this;
+}
+$(document).ready(function () {
+    console.log($(window).scrollLeft());
+    $('.hand').center();
+    $('.con').center();
+    
+});
 $(".shield-float").css("left", getRamdom());
 
 function getRamdom() {
